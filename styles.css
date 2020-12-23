@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #754043, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Ubuntu;
+    font-size: 2rem;
+}
+
+form,
+.todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+form input,
+form button {
+    background-color: white;
+    border: none;
+    padding: 0.5rem;
+    outline: none;
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+form button {
+    color: #f64f59
+}
+
+form button:hover {
+    background-color: #f64f59;
+    color: white;
+}
+
+.todo__container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+    width: 15rem;
+    margin: 1rem;
+    transition: all 0.5s ease;
+}
+
+.todo__item {
+    font-family: Roboto;
+    font-weight: bold;
+    list-style: none;
+    flex: 1;
+    transition: all 0.5s ease;
+}
+
+.todo__container button {
+    background-color: white;
+    border: none;
+    margin-left: 1rem;
+    padding: 0.4rem;
+    transition: all 0.5s ease;
+}
+
+.completed {
+    color: #12c2e9;
+    transition: all 0.5s ease;
+}
+
+.trash {
+    color: #f64f59;
+    transition: all 0.5s ease;
+}
+
+.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+footer {
+    font-family: cursive;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    form input,
+    form button {
+        font-size: 1rem;
+    }
+
+}
