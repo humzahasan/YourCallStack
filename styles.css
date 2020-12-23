@@ -63,7 +63,7 @@ form button:hover {
 }
 
 .todo__item {
-    font-family: Roboto;
+    font-family: Ubuntu;
     font-weight: bold;
     list-style: none;
     flex: 1;
